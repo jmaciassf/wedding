@@ -1,5 +1,5 @@
 function musicOff(){
-    console.log("musicOff");
+    //console.log("musicOff");
     
     var link = document.getElementById('musicOn'); link.style.display = 'none';
     var link2 = document.getElementById('musicOff'); link2.style.display = 'block';
@@ -9,7 +9,7 @@ function musicOff(){
 }
 
 function musicOn(){
-    console.log("musicOn");
+    //console.log("musicOn");
     var link = document.getElementById('musicOff'); link.style.display = 'none';
     var link2 = document.getElementById('musicOn'); link2.style.display = 'block';
   
