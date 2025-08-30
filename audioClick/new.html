@@ -1,0 +1,23 @@
+<!-- Audio -->
+<div class="musicaOn" target="_blank" id="musicOn" style="cursor: pointer;/* display: none; */"  onclick="musicOff()">
+    <img src="img/musica-on-4.gif">
+</div>
+<div class="musicaOff letraSecundaria" target="_blank" id="musicOff" style="cursor: pointer;" onclick="musicOn()">
+    <img src="img/volume-up-solid.svg">
+</div>
+<audio id="musica" loop="" autoplay>
+    <source src="audio/music.mp3" type="audio/mp3">
+</audio>
+
+<!-- Modal -->
+<div class="modal-backdrop fade in" id="modalBackground"></div>
+<div class="modal fade in" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"  onclick="closePopup()">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-audio">
+            <h3>Bienvenidos a la invitación de <br>Gerardo & Mariana</h3>
+            <div class="text-center mb-3" id="boton-modal">
+                <button class="btn btn-gris letraSecundaria btn-primary w-50 rounded-pill b1 text-transform"  onclick="musicOn()">INGRESAR</button> 
+            </div>
+        </div>
+    </div>
+</div>
