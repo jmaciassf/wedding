@@ -113,6 +113,7 @@
     transition: transform .3s ease-out;
     transform: translate(0, -50px);
     margin: 0 auto;
+    justify-content: center;
 }
 @media screen and (min-width: 768px) {
     .modal-dialog {
@@ -263,7 +264,6 @@
 .story04 {
     background-image: url('../img/story-04.jpg');
 }
-
 .story01 {
     background-image: url('../img/story-01.jpg');
 }
