@@ -249,3 +249,37 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+.height0 {
+    height: 0;
+}
+
+.elementor-gallery-item__overlay {
+    background-size: cover;
+    background-position: center;
+}
+
+.story04 {
+    background-image: url('../img/story-04.jpg');
+}
+
+.story01 {
+    background-image: url('../img/story-01.jpg');
+}
+.story02 {
+    background-image: url('../img/story-02.jpg');
+}
+.story03 {
+    background-image: url('../img/story-03.jpg');
+}
+
+.center {
+    text-align: center;
+}
+
+#countdown-end {
+    color: white;
+    font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-secondary-font-weight);
+}
