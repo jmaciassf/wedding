@@ -19,9 +19,17 @@ function musicOn(){
 
 
 function closePopup(){
-    var link = document.getElementById('modalBackground'); link.style.display = 'none';
-    var link2 = document.getElementById('modalAlert'); link2.style.display = 'none';
-    musicOn();
+    $('.wrapper').addClass("active");   
+    
+    setTimeout(function() {
+      $('#modalBackground').fadeOut();
+      $('#modalAlert').fadeOut();
+
+      setTimeout(function() {
+        $('#divMain').fadeIn();
+        musicOn();
+      }, 1200);
+    }, 600);
 }
 
 

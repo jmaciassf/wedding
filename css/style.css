@@ -50,7 +50,7 @@
 }
 .musicaOn img {
     width: 50px;
-    height: 50px;
+    height: 50px !important;
 }
 
 .modal {
@@ -65,7 +65,6 @@
     overflow-y: hidden;
 }
 
-
 .fade:not(.show) {
     opacity: 0;
 }
@@ -73,26 +72,18 @@
     opacity: 1;
     display: block;
 }
-@media screen and (min-width: 768px) {
-    .modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    }
-}
 
 .modal-content {
     position: relative;
-    background-color: #fff;
-    border: 1px solid #999;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    /*background-color: #fff;
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
+    */
+    outline: 0;    
     background-clip: padding-box;
 }
-.modal-audio {
-    padding: 4%;
+.modal-audio {    
+    padding: 32px;
     text-align: center;
 }
 .modal.in .modal-dialog {
@@ -113,7 +104,10 @@
     transition: transform .3s ease-out;
     transform: translate(0, -50px);
     margin: 0 auto;
-    justify-content: center;
+    justify-content: center;    
+    backdrop-filter: blur(2px);
+    max-width: 100%;
+    height: 110%;
 }
 @media screen and (min-width: 768px) {
     .modal-dialog {
@@ -149,9 +143,7 @@
     position: relative;
     width: auto;
     margin: .5rem;
-    pointer-events: none;
 }
-
 
 .modal-backdrop.fade {
     opacity: 0;
@@ -296,7 +288,8 @@
 }
 
 .ceremony .elementor-widget-image img {
-    height: 250px;
+    height: 250px;    
+    border-radius: 8px;
 }
 
 .elementor-1229 .elementor-element.elementor-element-d458311:not(.elementor-motion-effects-element-type-background), 
@@ -311,6 +304,21 @@
     margin-top: -48px;
     display: block;
     margin-bottom: 48px;
+}
+
+.mapLink button {
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #CD9F58;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.mapLink button:hover, .mapLink button:focus {
+    opacity: 0.8;
+    color: white;
+    background-color: #CD9F58;
 }
 
 .ceremony h2 {
@@ -341,4 +349,147 @@
 
 .divMaps {
     height: 0;
+}
+
+.greatVibes, .greatVibes .elementor-heading-title {
+    font-family: "Great Vibes", cursive !important;
+}
+
+.greatVibes.elementor-heading-title {
+    font-size: 54px !important;
+}
+
+.modal h3 {    
+    font-size: 56px;
+    font-family: "Great Vibes", cursive;
+    font-style: normal;    
+    color: #555555;
+    font-weight: 500;
+}
+
+.modal button {    
+    font-size: 32px;
+    font-family: "Great Vibes", cursive;
+    width: 100%;
+    margin-top: 16px;
+}
+
+#divMain {
+    display: none;
+}
+
+#divNamesDate .date {    
+    font-weight: 500;
+    font-size: 42px;
+}
+
+#divNamesDate .divbackground {
+    background-image: url(../img/background01.png);
+    background-attachment: fixed;
+}
+
+#divNamesDate .divbackground:hover {
+    --overlay-opacity: 0.59;
+}
+
+.divbackground02 {
+    background-image: url(../img/background02.png) !important;
+    background-attachment: fixed;
+}
+
+.modal {
+    background-image: url(../img/background02.png) !important;
+    background-size: cover;
+}
+
+/* Envelope animation */
+.wrapper {
+  height: 200px;
+  width: 300px;
+  background-color: #3760C9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;  
+  margin-inline: auto;
+  box-shadow: 11px 11px 33px 7px black;
+}
+
+.lid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+/* Lid when closed */
+.lid.one {
+  border-top: 100px solid #658ced;
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+
+/* Lid when opened */
+.lid.two {
+  border-top: 100px solid #3760C9;
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition-delay: 0.5s;
+}
+
+.envelope {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 100px solid transparent;
+  border-right: 150px solid #C4DFF0;
+  border-bottom: 100px solid #C4DFF0;
+  border-left: 150px solid #a4d4f2;
+  z-index: 3;
+}
+
+.letter {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.letter p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #3B4049;
+}
+
+.wrapper:hover .lid.one, .wrapper.active .lid.one {
+    transform: rotateX(90deg);
+    transition-delay: 0s;
+}
+
+.wrapper:hover .lid.two, .wrapper.active .lid.two {
+    transform: rotateX(180deg);
+    transition-delay: 0.25s;
+}
+
+.wrapper:hover .letter, .wrapper.active .letter {
+  transform: translateY(-50px);
+  transition-delay: 0.5s;
+}
+
+.elementor-gallery-item__overlay {
+    border-radius: 8px;
 }
