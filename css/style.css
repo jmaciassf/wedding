@@ -262,16 +262,23 @@
 }
 
 .story04 {
-    background-image: url('../img/story-04.jpg');
+    background-image: url('../img/story-04.jpg');    
+    background-position-y: 60%;
 }
 .story01 {
     background-image: url('../img/story-01.jpg');
 }
 .story02 {
     background-image: url('../img/story-02.jpg');
+    background-position-y: 33%;
 }
 .story03 {
-    background-image: url('../img/story-03.jpg');
+    background-image: url('../img/story-03.jpg');    
+    background-position-y: 64%;
+}
+.story05 {
+    background-image: url('../img/story-05.jpg');
+    background-position-y: 60%;
 }
 
 .center {
@@ -282,4 +289,56 @@
     color: white;
     font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
     font-weight: var(--e-global-typography-secondary-font-weight);
+}
+
+.e-gallery-item.elementor-gallery-item {
+    cursor: default;
+}
+
+.ceremony .elementor-widget-image img {
+    height: 250px;
+}
+
+.elementor-1229 .elementor-element.elementor-element-d458311:not(.elementor-motion-effects-element-type-background), 
+.elementor-1229 .elementor-element.elementor-element-d458311 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    /*background-image: url('../img/cover.jpg') !important;*/
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position-y: 30%;
+}
+
+.mapLink {        
+    margin-top: -48px;
+    display: block;
+    margin-bottom: 48px;
+}
+
+.ceremony h2 {
+    margin-bottom: 20px;
+}
+
+.ceremony .divSection {
+    gap: 0;
+}
+
+.ceremony .info {
+    flex: 1;
+}
+
+.ceremony .divInfo {
+    flex: 1;
+    margin-top: 16px;
+}
+
+.ceremony .divInfo .elementor-widget-container {    
+    display: flex;
+    flex-direction: column;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.divMaps {
+    height: 0;
 }
