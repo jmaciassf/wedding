@@ -1,52 +1,26 @@
 .musicaOff {
-    float: left;
-    right: 0;
-    top: 45%;
+    padding: 12px;
+}
+.musicaOff img {
+    filter: invert(1);
+}
+.musicaOn, #divAudio .box {
+    /* top: 45%; */
+    right: 12px;
     position: fixed;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
     transform-origin: 0 0;
     background-color: #b0b0b0;
     letter-spacing: 3px;
     font-family: montserrat;
     color: #fff;
-    border-radius: 3px 0 0 3px;
-    padding: 12px;
+    border-radius: 100%;
     font-weight: 100;
     font-size: 22px;
     cursor: pointer;
     width: 50px;
     height: 50px;
     z-index: 1000;
-    text-align: center
-}
-.musicaOff img {
-    filter: invert(1);
-}
-
-.musicaOn {
-    float: left;
-    right: 0;
-    top: 45%;
-    position: fixed;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background-color: #b0b0b0;
-    letter-spacing: 3px;
-    font-family: montserrat;
-    color: #fff;
-    border-radius: 3px 0 0 3px;
-    font-weight: 100;
-    font-size: 22px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    z-index: 1000
+    bottom: 12px;
 }
 .musicaOn img {
     width: 50px;
@@ -397,6 +371,10 @@
     background-attachment: fixed;
 }
 
+.divbackground02 .e-con-inner {
+    padding-block: 370px !important;
+}
+
 .modal {
     background-image: url(../img/background02.png) !important;
     background-size: cover;
@@ -492,4 +470,168 @@
 
 .elementor-gallery-item__overlay {
     border-radius: 8px;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.twae-content,
+.ourHistory .e-gallery-item,
+.revealing-image {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.elementor-widget-countdown .elementor-countdown-expire--message {
+    display: none;
+    padding: 20px;
+    text-align: center
+}
+
+.elementor-widget-countdown .elementor-countdown-wrapper {
+    flex-direction: row
+}
+
+.elementor-widget-countdown .elementor-countdown-item {
+    padding: 24px 0;
+    text-align: center;
+    color: #fff
+}
+
+.elementor-widget-countdown .elementor-countdown-digits,.elementor-widget-countdown .elementor-countdown-label {
+    line-height: 1
+}
+
+.elementor-widget-countdown .elementor-countdown-digits {
+    font-size: 50px;
+}
+
+.elementor-widget-countdown .elementor-countdown-label {
+    font-size: 19px
+}
+
+.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-digits,.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-label {
+    display: block
+}
+
+.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+.elementor-widget-countdown.elementor-countdown--label-inline {
+    text-align: center
+}
+
+.elementor-widget-countdown.elementor-countdown--label-inline .elementor-countdown-item {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1
+}
+
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+    font-size: 15px
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+    font-size: 19px
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+    font-size: 29px
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+    font-size: 39px
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+    font-size: 59px
+}
+
+.margin-inline_auto {
+    margin-inline: auto;
+}
+
+.imgDecoration {
+    width: 320px;
+    margin-block: 36px;
+}
+
+.dressCode,
+#dayArrived, #ourHistory {
+    background-image: url(../img/paperboard-texture.jpg) !important;
+}
+
+#dayArrived, #ourHistory, 
+#divWhereAndWhen {
+	padding-block: 64px;
+}
+
+
+#dayArrived .elementor-widget-container {
+    color: #c7910d;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.margin0 {
+    margin: 0 !important;
+}
+
+#ourHistory .elementor-element {
+    background: none !important;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#ourHistory .elementor-widget-container, #divWhereAndWhen .e-con-inner {
+    padding: 0;
+}
+
+.ceremony {
+    margin-top: 24px !important;
+}
+
+.dressCode {
+    margin-top: 36px !important;
 }

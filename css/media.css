@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+    .ourHistory .e-gallery-item {
+        width: 100%;
+    }
+
+    .ourHistory .e-gallery-container, 
+    .ourHistory .e-gallery-grid:not(.e-gallery--animated) {
+        display: flex;
+        gap: 24px;
+    }
+}

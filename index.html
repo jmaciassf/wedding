@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- 
     <script type="text/javascript" async="" src="./files/js(1)"></script>
     <script async="" src="./files/gtm.js.descarga"></script>
@@ -592,10 +593,10 @@
             
             <!-- Audio -->
             <div id="divAudio">
-                <div class="musicaOn" target="_blank" id="musicOn" style="cursor: pointer;/* display: none; */"  onclick="musicOff()">
+                <div class="musicaOn box" target="_blank" id="musicOn" style="cursor: pointer;/* display: none; */"  onclick="musicOff()">
                     <img src="img/musica-on-4.gif">
                 </div>
-                <div class="musicaOff letraSecundaria" target="_blank" id="musicOff" style="cursor: pointer;" onclick="musicOn()">
+                <div class="musicaOff box letraSecundaria" target="_blank" id="musicOff" style="cursor: pointer;" onclick="musicOn()">
                     <img src="img/volume-up-solid.svg">
                 </div>
                 <audio id="musica" loop="" autoplay>
@@ -610,6 +611,12 @@
                 <div class="divbackground elementor-element elementor-element-d458311 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="d458311" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
                     <div class="divbackground"></div>
                     <div class="e-con-inner" >
+                        
+                        <!-- Image -->
+                        <div class="elementor-widget-container margin-inline_auto">
+                            <img decoding="async" width="200" height="50" src="./files/Adorno_Mesa-de-trabajo-1.png" class="attachment-large size-large wp-image-310 revealing-image imgDecoration" alt="">
+                        </div>
+
                         <div class="elementor-element elementor-element-37ccb89 elementor-hidden-mobile elementor-widget elementor-widget-image animated bounceInDown" data-id="37ccb89" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceInDown&quot;}" data-widget_type="image.default" >
                             <div class="elementor-widget-container" >
                                 <style>
@@ -638,54 +645,56 @@
                             <div class="elementor-widget-container" >
                                 <style>
                                     /*! elementor - v3.23.0 - 15-07-2024 */
-                                    .elementor-heading-title {
-                                        padding: 0;
-                                        margin: 0;
-                                        line-height: 1
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
-                                        color: inherit;
-                                        font-size: inherit;
-                                        line-height: inherit
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
-                                        font-size: 15px
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
-                                        font-size: 19px
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
-                                        font-size: 29px
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-                                        font-size: 39px
-                                    }
-
-                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
-                                        font-size: 59px
-                                    }
                                 </style>
                                 <h2 class="elementor-heading-title elementor-size-default">Victoria &amp; Paulino</h2>
                             </div>
                         </div>
 
+                        <!-- Fecha -->
                         <div class="elementor-element elementor-element-9a653be elementor-widget elementor-widget-heading" data-id="9a653be" data-element_type="widget" data-widget_type="heading.default" >
                             <div class="elementor-widget-container" >
                                 <h2 class="date elementor-heading-title elementor-size-default">15 / Febrero /2026</h2>
                             </div>
                         </div>
 
+                        <!-- Countdown -->
+                        <div class="elementor-element elementor-element-1d7477e elementor-countdown--label-block elementor-invisible elementor-widget elementor-widget-countdown" data-id="1d7477e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="countdown.default" >
+                            <div class="elementor-widget-container">
+                                <div class="elementor-countdown-wrapper" id="clockdiv">                                
+                                    <div class="elementor-countdown-item" >
+                                        <span class="days elementor-countdown-digits elementor-countdown-days"></span>
+                                        <span class="elementor-countdown-label">Días</span>
+                                    </div>
+                                    <div class="elementor-countdown-item" >
+                                        <span class="hours elementor-countdown-digits elementor-countdown-hours"></span>
+                                        <span class="elementor-countdown-label">Horas</span>
+                                    </div>
+                                    <div class="elementor-countdown-item" >
+                                        <span class="minutes elementor-countdown-digits elementor-countdown-minutes"></span>
+                                        <span class="elementor-countdown-label">Minutos</span>
+                                    </div>
+                                    <div class="elementor-countdown-item" >
+                                        <span class="seconds elementor-countdown-digits elementor-countdown-seconds"></span>
+                                        <span class="elementor-countdown-label">Segundos</span>
+                                    </div>
+                                </div>
+
+                                <!-- Element to display "Expired" message -->
+                                <div id="countdown-end" class="center"></div> 
+                            </div> 
+                        </div> 
+
+                        <!-- Image -->
+                        <div class="elementor-widget-container margin-inline_auto">
+                            <img decoding="async" width="200" height="50" src="./files/Adorno_Mesa-de-trabajo-1.png" class="attachment-large size-large wp-image-310 revealing-image imgDecoration" alt="">
+                        </div>
                     </div>                    
                 </div>
             </div>
 
             <!-- Llego el gran dia -->
-            <div class="elementor-element elementor-element-995edf6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent e-lazyloaded" data-id="995edf6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
+            <div id="dayArrived" class="elementor-element elementor-element-995edf6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent e-lazyloaded" 
+                data-id="995edf6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
                 <div class="elementor-element elementor-element-1c21872 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="1c21872" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
                     <div class="e-con-inner" >
                         <div class="elementor-element elementor-element-968dd15 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="968dd15" data-element_type="container" >
@@ -731,7 +740,7 @@
                                             }
                                         </style>
                                         <p>Porque el amor es un viaje hermoso, los invitamos a acompañarnos en la celebración de nuestro matrimonio.</p>
-                                        <p>Celebramos la unión de dos personas que se aman profundamente. Que su matrimonio sea un reflejo de la belleza y la armonía que puede existir en el mundo.</p>
+                                        <p class="margin0">Celebramos la unión de dos personas que se aman profundamente. Que su matrimonio sea un reflejo de la belleza y la armonía que puede existir en el mundo.</p>
                                     </div>
                                 </div>
                             </div>
@@ -741,14 +750,12 @@
             </div>
 
             <!-- Save the date -->
-            <div class="center elementor-element elementor-element-5a9d01c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="5a9d01c" data-element_type="container" >
+            <div class="hide center elementor-element elementor-element-5a9d01c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="5a9d01c" data-element_type="container" >
                 <div class="elementor-element elementor-element-947188f e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="947188f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
                     <div class="e-con-inner" >
                         <div class="elementor-element elementor-element-b50f9ae e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="b50f9ae" data-element_type="container" >
                             <div class="elementor-element elementor-element-820e754 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="820e754" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="image.default" >
-                                <div class="elementor-widget-container" >
-                                    <img decoding="async" width="200" height="50" src="./files/Adorno_Mesa-de-trabajo-1.png" class="attachment-large size-large wp-image-310" alt="">
-                                </div>
+                                
                             </div>
                             <div class="elementor-element elementor-element-c957c7f elementor-widget elementor-widget-heading" data-id="c957c7f" data-element_type="widget" data-widget_type="heading.default" >
                                 <div class="elementor-widget-container" >
@@ -760,235 +767,152 @@
                                     <h2 class="elementor-heading-title elementor-size-default">15 Febrero 2026</h2>
                                 </div>
                             </div>
-
-                            <!-- Countdown Timer -->
-                             <div>
-                                <div class="elementor-element elementor-element-1d7477e elementor-countdown--label-block elementor-invisible elementor-widget elementor-widget-countdown" data-id="1d7477e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="countdown.default" >
-                                    <div class="elementor-widget-container" >
-                                        <style>
-                                            /*! elementor-pro - v3.23.0 - 15-07-2024 */
-                                            .elementor-widget-countdown .elementor-countdown-expire--message {
-                                                display: none;
-                                                padding: 20px;
-                                                text-align: center
-                                            }
-
-                                            .elementor-widget-countdown .elementor-countdown-wrapper {
-                                                flex-direction: row
-                                            }
-
-                                            .elementor-widget-countdown .elementor-countdown-item {
-                                                padding: 20px 0;
-                                                text-align: center;
-                                                color: #fff
-                                            }
-
-                                            .elementor-widget-countdown .elementor-countdown-digits,.elementor-widget-countdown .elementor-countdown-label {
-                                                line-height: 1
-                                            }
-
-                                            .elementor-widget-countdown .elementor-countdown-digits {
-                                                font-size: 69px
-                                            }
-
-                                            .elementor-widget-countdown .elementor-countdown-label {
-                                                font-size: 19px
-                                            }
-
-                                            .elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-wrapper {
-                                                display: flex;
-                                                justify-content: center;
-                                                margin-right: auto;
-                                                margin-left: auto
-                                            }
-
-                                            .elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-digits,.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-label {
-                                                display: block
-                                            }
-
-                                            .elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-item {
-                                                flex-basis: 0;
-                                                flex-grow: 1
-                                            }
-
-                                            .elementor-widget-countdown.elementor-countdown--label-inline {
-                                                text-align: center
-                                            }
-
-                                            .elementor-widget-countdown.elementor-countdown--label-inline .elementor-countdown-item {
-                                                display: inline-block;
-                                                padding-left: 5px;
-                                                padding-right: 5px
-                                            }
-                                        </style>
-                                        <div class="elementor-countdown-wrapper" id="clockdiv">                                
-                                            <div class="elementor-countdown-item" >
-                                                <span class="days elementor-countdown-digits elementor-countdown-days"></span>
-                                                <span class="elementor-countdown-label">Días</span>
-                                            </div>
-                                            <div class="elementor-countdown-item" >
-                                                <span class="hours elementor-countdown-digits elementor-countdown-hours"></span>
-                                                <span class="elementor-countdown-label">Horas</span>
-                                            </div>
-                                            <div class="elementor-countdown-item" >
-                                                <span class="minutes elementor-countdown-digits elementor-countdown-minutes"></span>
-                                                <span class="elementor-countdown-label">Minutos</span>
-                                            </div>
-                                            <div class="elementor-countdown-item" >
-                                                <span class="seconds elementor-countdown-digits elementor-countdown-seconds"></span>
-                                                <span class="elementor-countdown-label">Segundos</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- Element to display "Expired" message -->
-                                        <div id="countdown-end" class="center"></div> 
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Donde y Cuando -->
-            <div class="elementor-element elementor-element-a17f814 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="a17f814" data-element_type="container" >
-                <div class="e-con-inner" >
-                    <div class="elementor-element elementor-element-7658dc8 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="7658dc8" data-element_type="container" >
-                        <div class="e-con-inner" >
-                            <div class="elementor-element elementor-element-1cbd2ff animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="1cbd2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
-                                <div class="elementor-widget-container" >
-                                    <h2 class="greatVibes elementor-heading-title elementor-size-default">¿Dónde y Cuándo?</h2>
+             <div id="divWhereAndWhen">
+                <div class="elementor-element elementor-element-a17f814 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="a17f814" data-element_type="container" >
+                    <div class="e-con-inner" >
+                        <div class="elementor-element elementor-element-7658dc8 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="7658dc8" data-element_type="container" >
+                            <div class="e-con-inner" >
+                                <div class="elementor-element elementor-element-1cbd2ff animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="1cbd2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
+                                    <div class="elementor-widget-container" >
+                                        <h2 class="greatVibes elementor-heading-title elementor-size-default">¿Dónde y Cuándo?</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Ceremonia -->
-            <div class="ceremony elementor-element elementor-element-eb372ef e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="eb372ef" data-element_type="container" >
-                <div class="elementor-element elementor-element-5d703a8 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="5d703a8" data-element_type="container" >
-                    <div class="e-con-inner" >
+                <!-- Ceremonia -->
+                <div class="ceremony elementor-element elementor-element-eb372ef e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="eb372ef" data-element_type="container" >
+                    <div class="elementor-element elementor-element-5d703a8 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="5d703a8" data-element_type="container" >
+                        <div class="e-con-inner" >
 
-                        <!-- Left -->
-                        <div class="divSection elementor-element elementor-element-aa49ea0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="aa49ea0" 
-                            data-element_type="container" >
-                            <!-- Image -->
-                            <div class="elementor-element elementor-element-a38844a animated-slow elementor-invisible elementor-widget elementor-widget-image" 
-                                data-id="a38844a" data-element_type="widget" 
-                                data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
-                                data-widget_type="image.default" 
-                                >
-                                <div class="elementor-widget-container" >
-                                    <img fetchpriority="high" decoding="async" width="500" height="200" 
-                                    src="./files/Iglesia_Mesa-de-trabajo-1.png" 
-                                    class="attachment-large size-large wp-image-252" alt="" 
-                                    sizes="(max-width: 500px) 100vw, 500px">
-                                </div>
-                            </div>
-                            <div class="divInfo">
-                                <div class="elementor-element elementor-element-b312d97 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="b312d97" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
+                            <!-- Left -->
+                            <div class="divSection elementor-element elementor-element-aa49ea0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="aa49ea0" 
+                                data-element_type="container" >
+                                <!-- Image -->
+                                <div class="elementor-element elementor-element-a38844a animated-slow elementor-invisible elementor-widget elementor-widget-image" 
+                                    data-id="a38844a" data-element_type="widget" 
+                                    data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
+                                    data-widget_type="image.default" 
+                                    >
                                     <div class="elementor-widget-container" >
-                                        <h2 class="elementor-heading-title elementor-size-default">Ceremonia</h2>
+                                        <img fetchpriority="high" decoding="async" width="500" height="200" 
+                                        src="./files/Iglesia_Mesa-de-trabajo-1.png" 
+                                        class="attachment-large size-large wp-image-252 revealing-image" alt="" 
+                                        sizes="(max-width: 500px) 100vw, 500px">
                                     </div>
                                 </div>
-                                <div class="height100 elementor-element elementor-element-b1b53d4 elementor-widget elementor-widget-text-editor" data-id="b1b53d4" data-element_type="widget" data-widget_type="text-editor.default" >
-                                    <div class="height100 elementor-widget-container" >
-                                        <div class="info">
-                                            <p style="text-align: center;">
-                                                <b>Lugar:</b>
-                                                Parroquia San Lucas Evangelista
-                                            </p>
-                                            <p style="text-align: center;">
-                                                <b>Hora:</b>
-                                                De 12:00 pm a 1:00 pm​
-                                            </p>
-                                            <p style="text-align: center;">
-                                                <b>Dirección:</b>
-                                                Paso Peatonal, Moises Sáenz, Apodaca, N.L.
-                                            </p>
+                                <div class="divInfo">
+                                    <div class="elementor-element elementor-element-b312d97 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="b312d97" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
+                                        <div class="elementor-widget-container" >
+                                            <h2 class="elementor-heading-title elementor-size-default">Ceremonia</h2>
                                         </div>
+                                    </div>
+                                    <div class="height100 elementor-element elementor-element-b1b53d4 elementor-widget elementor-widget-text-editor" data-id="b1b53d4" data-element_type="widget" data-widget_type="text-editor.default" >
+                                        <div class="height100 elementor-widget-container" >
+                                            <div class="info">
+                                                <p style="text-align: center;">
+                                                    <b>Lugar:</b>
+                                                    Parroquia San Lucas Evangelista
+                                                </p>
+                                                <p style="text-align: center;">
+                                                    <b>Hora:</b>
+                                                    De 12:00 pm a 1:00 pm​
+                                                </p>
+                                                <p style="text-align: center;">
+                                                    <b>Dirección:</b>
+                                                    Paso Peatonal, Moises Sáenz, Apodaca, N.L.
+                                                </p>
+                                            </div>
 
-                                        <a class="mapLink" href="https://maps.app.goo.gl/G4BgbAyHyuuqfYsq7" target="_blank">
-                                            <button>Ver en Google Maps</button>
-                                        </a>
+                                            <a class="mapLink" href="https://maps.app.goo.gl/G4BgbAyHyuuqfYsq7" target="_blank">
+                                                <button>Ver en Google Maps</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Google Maps Embed -->
-                            <div class="divMaps elementor-element elementor-element-8ea64b1 animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="8ea64b1" 
-                                data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
-                                data-widget_type="google_maps.default" >
-                                <div class="elementor-widget-container" >
-                                    <style>
-                                        /*! elementor - v3.23.0 - 15-07-2024 */
-                                        .elementor-widget-google_maps .elementor-widget-container {
-                                            overflow: hidden
-                                        }
-
-                                        .elementor-widget-google_maps .elementor-custom-embed {
-                                            line-height: 0
-                                        }
-
-                                        .elementor-widget-google_maps iframe {
-                                            height: 300px
-                                        }
-                                    </style>
-                                    <div class="elementor-custom-embed" >
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="divSection elementor-element elementor-element-29279a2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="29279a2" data-element_type="container" >
-                            <!-- Image -->
-                            <div class="elementor-element elementor-element-6054938 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="6054938" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
-                                data-widget_type="image.default" >
-                                <div class="elementor-widget-container" >
-                                    <img decoding="async" width="500" height="200" 
-                                    src="img/salon.jpg" 
-                                    class="attachment-large size-large wp-image-254" alt="" 
-                                    sizes="(max-width: 500px) 100vw, 500px">
-                                </div>
-                            </div>
-                            <div class="divInfo">
-                                <div class="elementor-element elementor-element-ee15dd4 elementor-invisible elementor-widget elementor-widget-heading" data-id="ee15dd4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
+                                <!-- Google Maps Embed -->
+                                <div class="divMaps elementor-element elementor-element-8ea64b1 animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="8ea64b1" 
+                                    data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
+                                    data-widget_type="google_maps.default" >
                                     <div class="elementor-widget-container" >
-                                        <h2 class="elementor-heading-title elementor-size-default">Recepción</h2>
-                                    </div>
-                                </div>
-                                <div class="height100 elementor-element elementor-element-65b725d elementor-widget elementor-widget-text-editor" data-id="65b725d" data-element_type="widget" data-widget_type="text-editor.default" >
-                                    <div class="height100 elementor-widget-container" >
-                                        <div class="info">
-                                            <p style="text-align: center;">
-                                                <b>Lugar:</b>
-                                                Salón Zodiaco
-                                            </p>
-                                            <p style="text-align: center;">
-                                                <b>Hora:</b>
-                                                De 1:00 pm a 10:00 pm​
-                                            </p>
-                                            <p style="text-align: center;">
-                                                <b>Dirección:</b>
-                                                Nemesio García Naranjo, Moises Sáenz, Apodaca, N.L.
-                                            </p>
-                                        </div>
+                                        <style>
+                                            /*! elementor - v3.23.0 - 15-07-2024 */
+                                            .elementor-widget-google_maps .elementor-widget-container {
+                                                overflow: hidden
+                                            }
 
-                                        <a class="mapLink" href="https://maps.app.goo.gl/CkThSmtHQWM4Y1ig8" target="_blank">
-                                            <button>Ver en Google Maps</button>
-                                        </a>
+                                            .elementor-widget-google_maps .elementor-custom-embed {
+                                                line-height: 0
+                                            }
+
+                                            .elementor-widget-google_maps iframe {
+                                                height: 300px
+                                            }
+                                        </style>
+                                        <div class="elementor-custom-embed" >
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Google Maps Embed -->
-                            <div class="divMaps elementor-element elementor-element-7c8dd1e animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="7c8dd1e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="google_maps.default" >
-                                <div class="elementor-widget-container" >
-                                    <div class="elementor-custom-embed" >
-                                        
+                            <!-- Right -->
+                            <div class="divSection elementor-element elementor-element-29279a2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="29279a2" data-element_type="container" >
+                                <!-- Image -->
+                                <div class="elementor-element elementor-element-6054938 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="6054938" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" 
+                                    data-widget_type="image.default" >
+                                    <div class="elementor-widget-container" >
+                                        <img decoding="async" width="500" height="200" 
+                                        src="img/salon.jpg" 
+                                        class="attachment-large size-large wp-image-254 revealing-image" alt="" 
+                                        sizes="(max-width: 500px) 100vw, 500px">
+                                    </div>
+                                </div>
+                                <div class="divInfo">
+                                    <div class="elementor-element elementor-element-ee15dd4 elementor-invisible elementor-widget elementor-widget-heading" data-id="ee15dd4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default" >
+                                        <div class="elementor-widget-container" >
+                                            <h2 class="elementor-heading-title elementor-size-default">Recepción</h2>
+                                        </div>
+                                    </div>
+                                    <div class="height100 elementor-element elementor-element-65b725d elementor-widget elementor-widget-text-editor" data-id="65b725d" data-element_type="widget" data-widget_type="text-editor.default" >
+                                        <div class="height100 elementor-widget-container" >
+                                            <div class="info">
+                                                <p style="text-align: center;">
+                                                    <b>Lugar:</b>
+                                                    Salón Zodiaco
+                                                </p>
+                                                <p style="text-align: center;">
+                                                    <b>Hora:</b>
+                                                    De 1:00 pm a 10:00 pm​
+                                                </p>
+                                                <p style="text-align: center;">
+                                                    <b>Dirección:</b>
+                                                    Nemesio García Naranjo, Moises Sáenz, Apodaca, N.L.
+                                                </p>
+                                            </div>
+
+                                            <a class="mapLink" href="https://maps.app.goo.gl/CkThSmtHQWM4Y1ig8" target="_blank">
+                                                <button>Ver en Google Maps</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Google Maps Embed -->
+                                <div class="divMaps elementor-element elementor-element-7c8dd1e animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="7c8dd1e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="google_maps.default" >
+                                    <div class="elementor-widget-container" >
+                                        <div class="elementor-custom-embed" >
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -998,10 +922,11 @@
             </div>
 
             <!-- Nuestra Historia -->
-            <div class="elementor-element elementor-element-b46a4d1 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="b46a4d1" data-element_type="container" >
+            <div id="ourHistory" class="ourHistory elementor-element elementor-element-b46a4d1 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" 
+                data-id="b46a4d1" data-element_type="container" >
                 <div class="elementor-element elementor-element-1d7e4ac e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="1d7e4ac" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
                     <div class="e-con-inner" >
-                        <div class="elementor-element elementor-element-3cdb6fd e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="3cdb6fd" data-element_type="container" ></div>
+                        <div class="hide elementor-element elementor-element-3cdb6fd e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="3cdb6fd" data-element_type="container" ></div>
                         <div class="elementor-element elementor-element-9f101d7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="9f101d7" data-element_type="container" >
                             <div class="elementor-element elementor-element-faa23ab elementor-invisible elementor-widget elementor-widget-heading" data-id="faa23ab" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default" >
                                 <div class="elementor-widget-container" >
@@ -1190,15 +1115,14 @@
                                         }
                                     </style>
                                     <div class="elementor-gallery__container e-gallery-container e-gallery-grid e-gallery--ltr e-gallery--lazyload" style="--hgap: 10px; --vgap: 10px; --animation-duration: 350ms; --columns: 2; --rows: 2; --aspect-ratio: 66.66666666666666%; --container-aspect-ratio: 66.96428571428571%;" >
-                                        <a class="e-gallery-item elementor-gallery-item elementor-animated-content" 
+                                        <a class="e-gallery-item elementor-gallery-item elementor-animated-content revealing-image" 
                                         
                                         data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="41ce203" 
                                         data-elementor-lightbox-title="fotografai4" 
                                         data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTIwMCwidXJsIjoiaHR0cHM6XC9cL3d3dy5lLWludml0YS5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzA1XC9mb3RvZ3JhZmFpNC0xLnBuZyIsInNsaWRlc2hvdyI6IjQxY2UyMDMifQ%3D%3D"  style="--column: 0; --row: 0;">
                                             <div class="e-gallery-image elementor-gallery-item__image" 
-                                            
                                             data-width="600" data-height="400" aria-label="" role="img" ></div>
-                                            <div class="elementor-gallery-item__overlay story01" ></div>
+                                            <div class="elementor-gallery-item__overlay story01"></div>
                                         </a>
                                         <a class="e-gallery-item elementor-gallery-item elementor-animated-content" 
                                         
